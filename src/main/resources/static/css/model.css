@@ -1,0 +1,401 @@
+/**
+ * Created by luthonda on 30-05-2017.
+ */
+
+/**
+ *
+ * @type {[*]}
+ * @private
+ *
+ * Dicionario de Palavras
+ * contem a estrutura de tradução de cada palavra na pagina
+ *
+ * selector identificado peloselector sLang[{numero_da_de_ordem}]
+ */
+var ___data_dic = [
+    //0
+    {
+        en: ' Home',
+        pt: ' Início'
+    },
+    //1
+    {
+        en: ' Programs',
+        pt: ' Programas'
+    },
+    //2
+    {
+        en: ' Current Events',
+        pt: ' Eventos em Curso'
+    },
+    //3
+    {
+        en: ' Teams involved',
+        pt: ' Equipas envolvidas'
+    },
+    //4
+    {
+        en: ' Contacts',
+        pt: ' Contactos'
+    },
+    //5
+    {
+        en: 'Hello',
+        pt: 'Olá'
+    },
+    //6
+    {
+        en: 'Proposed Management',
+        pt: 'Gerencia Proposta'
+    },
+    //7
+    {
+        en: 'Project Management',
+        pt: 'Gerencia Projeto'
+    },
+    //8
+    {
+        en: 'Management Employee',
+        pt: 'Gerencia Colaborador'
+    },
+    //9
+    {
+        en: 'Management Report',
+        pt: 'Gerencia Relatório'
+    },
+    //10
+    {
+        en: 'Partner Management',
+        pt: 'Gerencia Parceiro'
+    },
+    //11
+    {
+        en: 'Welcome',
+        pt: 'Bem-Vindo'
+    },
+    //12
+    {
+        en: 'Investment Portal of the Sovereign Fund',
+        pt: 'Portal de Investimentos do Fundo Soberano'
+    },
+    //13
+    {
+        en: 'Complaints and Suggestions',
+        pt: 'Reclamações e<br> Sugestões'
+    },
+    //14
+    {
+        en: 'SUBSCRIBE TO OUR NEWSLETTER',
+        pt: 'ASSINE A NOSSA NEWSLETER'
+    },
+    //15
+    {
+        en: 'Subscribe',
+        pt: 'Subscrever'
+    },
+    //16
+    {
+        en: 'Biography',
+        pt: 'Biografia'
+    },
+    //17
+    {
+        en: 'Authentication',
+        pt: 'Autenticação'
+    },
+    //18
+    {
+        en: 'Sing In',
+        pt: 'Entrar'
+    },
+    //19
+    {
+        en: 'Sing On',
+        pt: 'Registe-se'
+    },
+    //20
+    {
+        en: 'Forgot your password?',
+        pt: 'Esqueceu a sua senha?'
+    },
+    //21
+    {
+        en: 'Projects',
+        pt: 'Projetos'
+    },
+    //22
+    {
+        en: 'Photo gallery',
+        pt: 'Galeria de Fotos'
+    },
+    //23
+    {
+        en: 'Select a province',
+        pt: 'Selecione uma província'
+    },
+    //24
+    {
+        en: 'Partners',
+        pt: 'Parceiros'
+    },
+    //25
+    {
+        en: 'All',
+        pt: 'Todos'
+    },
+    //24
+    {
+        en: 'Partner',
+        pt: 'Parceiro'
+    },
+
+
+    ////
+    {
+        en: 'Reports',
+        pt: 'Relatórios'
+    },
+    {
+        en: 'Project',
+        pt: 'Projeto'
+    },
+    {
+        en: 'Submit Proposal',
+        pt: 'Registar Proposta'
+    },
+    {
+        en: 'Register Project',
+        pt: 'Registar Projeto'
+    },
+    {
+        en: 'Register a Employee',
+        pt: 'Registar Colaborador'
+    },
+    {
+        en: 'Proposal',
+        pt: 'Proposta'
+    },
+    {
+        en: 'Employee',
+        pt: 'Colaborador'
+    },
+    {
+        en: 'Submission Date',
+        pt: 'Data de Submissão'
+    },
+    {
+        en: 'Objective',
+        pt: 'Objetivo'
+    },
+    {
+        en: 'No results',
+        pt: 'Sem Resultado'
+    },
+    {
+        en: 'Search Results',
+        pt: 'Resultado de Pesquisa'
+    },
+    {
+        en: 'Search for',
+        pt: 'Pesquisar por'
+    },
+
+
+    {
+        en: 'Context',
+        pt: 'Contexto'
+    },
+    {
+        en: 'Goal',
+        pt: 'Objetivo'
+    },
+    {
+        en: 'Project Focus',
+        pt: 'Foco Projeto'
+    },
+    {
+        en: 'Regulation',
+        pt: 'Regulamento'
+    },
+    {
+        en: 'Activity',
+        pt: 'Atividade'
+    },
+    {
+        en: 'Scope',
+        pt: 'Descrição Âmbito'
+    },
+    {
+        en: 'Method Scope',
+        pt: 'Método Âmbito'
+    },
+    {
+        en: 'Geographic focus',
+        pt: 'Foco Geográfico'
+    },
+    {
+        en: 'Comment',
+        pt: 'Comentário'
+    },
+    {
+        en: 'Abstract Concept',
+        pt: 'Resumo Conceito'
+    },
+    {
+        en: 'Abstract Concept',
+        pt: 'Resumo Conceito'
+    },
+    {
+        en: 'Indication Impact',
+        pt: 'Indicação Impacto'
+    },
+    {
+        en: 'Expected outcome',
+        pt: 'Resultado esperado'
+    },
+    {
+        en: 'Name of employee',
+        pt: 'Nome do colaborador'
+    },
+    {
+        en: 'Name of partner',
+        pt: 'Nome do parceiro'
+    },
+    {
+        en: 'Phone Number',
+        pt: 'Telefone'
+    },
+    {
+        en: 'Identity Card Number',
+        pt: 'Número do Bilhete de Identidade'
+    },
+    {
+        en: 'search',
+        pt: 'Pesquisar'
+    },
+    {
+        en: 'Focus project',
+        pt: 'Foco do Projeto'
+    },
+    {
+        en: 'What do you intend to find?',
+        pt: 'O que você pretende encontrar?'
+    },
+    {
+        en: 'Username',
+        pt: 'Utilizador'
+    },
+    {
+        en: 'Password',
+        pt: 'Palavra Passe'
+    },
+    {
+        en: 'Enter your email here',
+        pt: 'Digite aqui seu email'
+    },
+    {
+        en: 'Enter your email here',
+        pt: 'Digite aqui seu email'
+    },
+    {
+        en: 'Period',
+        pt: 'Período'
+    },
+    {
+        en: 'Initial date',
+        pt: 'Data Início'
+    },
+    {
+        en: 'End Date',
+        pt: 'Data Fim'
+    },
+    {
+        en: 'Attachments',
+        pt: 'Anexos'
+    },
+    {
+        en: 'Document',
+        pt: 'Documento'
+    },
+    {
+        en: 'Enabled',
+        pt: 'Ativo'
+    },
+    {
+        en: 'Desabled',
+        pt: 'Desativo'
+    },
+    {
+        en: 'Registration date',
+        pt: 'Data de registo'
+    },
+    {
+        en: 'State',
+        pt: 'Estado'
+    },
+    {
+        en: 'Department',
+        pt: 'Departamento'
+    },
+    {
+        en: 'Download',
+        pt: 'Transferir'
+    },
+    {
+        en: 'Full Name',
+        pt: 'Nome Completo'
+    },
+    {
+        en: 'Subject',
+        pt: 'Assunto'
+    },
+    {
+        en: 'Read more',
+        pt: 'Saiba mais'
+    },
+    {
+        en: 'Old password',
+        pt: 'Senha Antiga'
+    },
+    {
+        en: 'Enter your new password',
+        pt: 'Digite a sua nova senha'
+    },
+    {
+        en: 'Repeat your new password',
+        pt: 'Repita a sua nova senha'
+    },
+    {
+        en: 'Reset password',
+        pt: 'Redefinir a senha'
+    },
+    {
+        en: 'Logout',
+        pt: 'Sair'
+    },
+    {
+        en: 'Select',
+        pt: 'Selecione'
+    }
+
+];
+
+if (__lang === '/en')
+    for (var r = 0; r < ___data_dic.length; r++) {
+        $('[sLang="' + r + '"').html(___data_dic[r].en)
+        $('[placeholder="' + ___data_dic[r].pt + '"]').attr('placeholder', ___data_dic[r].en)
+        $('.boly span')
+    }
+
+function tr(x) {
+    if (__lang === '/en')
+        for (var r = 0; r < ___data_dic.length; r++)
+            if (___data_dic[r].pt === x)
+                return ___data_dic[r].en
+    return x;
+}
+
+if (__lang === '/en')
+    $('.boly span').each(function () {
+        $(this).html(tr($(this).html()))
+    });

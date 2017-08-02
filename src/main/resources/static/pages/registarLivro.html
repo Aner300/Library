@@ -1,0 +1,73 @@
+<div class="container">
+  <h2>Large Modal</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Registar Livro</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Registar Livro</h4>
+        </div>
+        <div class="modal-body">
+
+        <form name="frmLivro">
+        <div class="form-group">
+          <label for="email">Título</label>
+          <input type="text" class="form-control" id="email" placeholder="Enter email" ng-model="livro.titulo"/>
+        </div>
+        <div class="form-group">
+          <label for="password">Descrição</label>
+          <input type="text" class="form-control" id="password" placeholder="Password" ng-model="livro.descricao" />
+        </div>
+        <div class="form-group">
+          <label for="password">Autor</label>
+          <select class="" name="" ng-model="">
+            <option ng-repeat="livro in livros" value="">{{livro.titulo}}</option>
+          </select>
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit"class="btn btn-success" id="btnHideModal" data-dismiss="modal" ng-click="registarLivro()"><i class="glyphicon glyphicon-ok"></i>Registar</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        </div>
+      </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+<div class="tabela">
+  <table class="table">
+      <thead class="thead-inverse">
+        <tr>
+          <th>ID</th>
+          <th>Titulo</th>
+          <th>Descricao</th>
+        </tr>
+      </thead>
+      <tbody ng-repeat="livro in livros">
+        <tr>
+          <td>{{livro.Id}}</td>
+          <td>{{livro.titulo}}</td>
+          <td>{{livro.descricao}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#btnHideModal').click(function(){
+		$('#myModal').modal('hide');
+		
+	});
+	
+});
+</script>

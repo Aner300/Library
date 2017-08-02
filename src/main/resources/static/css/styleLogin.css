@@ -1,0 +1,37 @@
+.RegisterForm
+  {
+      background: rgba(19, 35, 47, 0.9);
+      padding: 40px;
+      max-width: 600px;
+      margin: 40px auto;
+      border-radius: 4px;
+      box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  }
+body{
+  background: #c1bdba;
+  font-family: 'Titillium Web', sans-serif;
+}
+label{
+  color:#fff;
+}
+
+.btn-success {
+
+    border: mediumaquamarine;
+    height: 26px;
+    padding-right: 10px;
+    padding-left: 12px;
+}
+.logo{
+  max-width: 100px;
+  max-height: 180px;
+}
+img{
+  border:0px;
+  max-width: 60px;
+}
+hr{
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
